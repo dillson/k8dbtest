@@ -1,7 +1,13 @@
 # k8dbtest
 Testing for Kubernetes DB application
 
-== Test MySQL setup
+## Deploy MySQL Container and Volume
+
+```
+$ kubectl create -f mysql-test.yaml
+```
+
+## Test MySQL setup
 
 You can use `mysql-client` to send some data to the master (`mysql-0.mysql`)
 
